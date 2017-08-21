@@ -11,8 +11,8 @@
 		F5C8562C1F471245001AED9B /* fifo.h in Headers */ = {isa = PBXBuildFile; fileRef = F5C8562A1F471245001AED9B /* fifo.h */; };
 		F5C856341F472A46001AED9B /* fastFifo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5C856321F472A46001AED9B /* fastFifo.cpp */; };
 		F5C856351F472A46001AED9B /* fastFifo.h in Headers */ = {isa = PBXBuildFile; fileRef = F5C856331F472A46001AED9B /* fastFifo.h */; };
-		F5C856421F4730C9001AED9B /* bitmapGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5C8563F1F4730C9001AED9B /* bitmapGenerator.cpp */; };
-		F5C856441F4730C9001AED9B /* bitmapGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = F5C856401F4730C9001AED9B /* bitmapGenerator.h */; };
+		F5C856421F4730C9001AED9B /* bitmap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5C8563F1F4730C9001AED9B /* bitmap.cpp */; };
+		F5C856441F4730C9001AED9B /* bitmap.h in Headers */ = {isa = PBXBuildFile; fileRef = F5C856401F4730C9001AED9B /* bitmap.h */; };
 		F5C8564C1F474E66001AED9B /* graphicTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = F5C8564B1F474E66001AED9B /* graphicTypes.h */; };
 		F5C8564F1F4753D0001AED9B /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5C8564E1F4753D0001AED9B /* ApplicationServices.framework */; };
 /* End PBXBuildFile section */
@@ -25,8 +25,8 @@
 		F5C856321F472A46001AED9B /* fastFifo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fastFifo.cpp; sourceTree = "<group>"; };
 		F5C856331F472A46001AED9B /* fastFifo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fastFifo.h; sourceTree = "<group>"; };
 		F5C8563A1F47307A001AED9B /* libGraphics.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libGraphics.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-		F5C8563F1F4730C9001AED9B /* bitmapGenerator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = bitmapGenerator.cpp; path = src/Graphics/bitmapGenerator.cpp; sourceTree = "<group>"; };
-		F5C856401F4730C9001AED9B /* bitmapGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bitmapGenerator.h; path = src/Graphics/bitmapGenerator.h; sourceTree = "<group>"; };
+		F5C8563F1F4730C9001AED9B /* bitmap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = bitmap.cpp; path = src/Graphics/bitmap.cpp; sourceTree = "<group>"; };
+		F5C856401F4730C9001AED9B /* bitmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bitmap.h; path = src/Graphics/bitmap.h; sourceTree = "<group>"; };
 		F5C8564B1F474E66001AED9B /* graphicTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = graphicTypes.h; path = src/Graphics/graphicTypes.h; sourceTree = "<group>"; };
 		F5C8564E1F4753D0001AED9B /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -92,8 +92,8 @@
 		F5C8563E1F473080001AED9B /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
-				F5C8563F1F4730C9001AED9B /* bitmapGenerator.cpp */,
-				F5C856401F4730C9001AED9B /* bitmapGenerator.h */,
+				F5C8563F1F4730C9001AED9B /* bitmap.cpp */,
+				F5C856401F4730C9001AED9B /* bitmap.h */,
 				F5C8564B1F474E66001AED9B /* graphicTypes.h */,
 			);
 			name = Graphics;
@@ -124,7 +124,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5C8564C1F474E66001AED9B /* graphicTypes.h in Headers */,
-				F5C856441F4730C9001AED9B /* bitmapGenerator.h in Headers */,
+				F5C856441F4730C9001AED9B /* bitmap.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,7 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5C856421F4730C9001AED9B /* bitmapGenerator.cpp in Sources */,
+				F5C856421F4730C9001AED9B /* bitmap.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
